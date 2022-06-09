@@ -1,0 +1,16 @@
+A,B,C = list(map(int,input().split()))
+D = int(input())
+
+B+=D//60
+C+=D%60
+
+B+=C//60
+C-=(C//60)*60
+
+A+=B//60
+B-=(B//60)*60
+
+while A>23:
+    A-=24
+
+print(A,B,C)
