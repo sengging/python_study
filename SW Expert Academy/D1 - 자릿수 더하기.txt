@@ -1,0 +1,3 @@
+N = input()
+num = list(map(int, N))
+print(sum(num))
